@@ -10,11 +10,11 @@
         class="w-full max-w-[400px] rounded-card border border-outline-variant bg-surface-lowest p-8 shadow-card-light"
       >
         <div class="mb-8 flex flex-col gap-1">
-          <h1 class="m-0 text-heading-sm font-medium leading-7 text-on-surface">
+          <h1 class="m-0 text-[22px] font-medium leading-7 text-on-surface">
             Welcome to SageTrader!
           </h1>
           <p
-            class="m-0 text-sm leading-5 tracking-body-md text-on-surface-variant"
+            class="m-0 text-sm leading-5 tracking-[0.15px] text-on-surface-variant"
           >
             Sign in to get started
           </p>

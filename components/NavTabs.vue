@@ -6,7 +6,7 @@
         :key="tab.label"
         type="button"
         :aria-current="tab.label === activeTabLabel ? 'page' : undefined"
-        class="inline-flex items-center justify-center rounded-[20px] px-3 py-1.5 text-sm leading-5 tracking-body whitespace-nowrap transition-colors duration-150 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-value/25 sm:px-4 sm:py-[10px]"
+        class="inline-flex items-center justify-center rounded-[20px] px-3 py-1.5 text-sm leading-5 tracking-[0.1px] whitespace-nowrap transition-colors duration-150 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-value/25 sm:px-4 sm:py-[10px]"
         :class="
           tab.label === activeTabLabel
             ? 'bg-primary-value/10 font-semibold text-primary-value'

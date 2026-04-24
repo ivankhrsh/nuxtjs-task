@@ -4,7 +4,7 @@
       v-for="(option, index) in options"
       :key="option.value"
       type="button"
-      class="relative -ml-px inline-flex flex-1 items-center justify-center gap-2 border border-outline px-3 py-[6px] text-sm font-medium leading-5 tracking-body transition-colors duration-150 first:ml-0 focus-visible:z-10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-value/25 sm:w-[108px] sm:flex-none"
+      class="relative -ml-px inline-flex flex-1 items-center justify-center gap-2 border border-outline px-3 py-[6px] text-sm font-medium leading-5 tracking-[0.1px] transition-colors duration-150 first:ml-0 focus-visible:z-10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-value/25 sm:w-[108px] sm:flex-none"
       :class="[
         index === 0 ? 'rounded-l-pill' : '',
         index === options.length - 1 ? 'rounded-r-pill' : '',

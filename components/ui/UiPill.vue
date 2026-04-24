@@ -3,7 +3,7 @@
     :is="props.as"
     :type="props.as === 'button' ? type : undefined"
     :class="[
-      'inline-flex min-h-6 items-center justify-center rounded-lg px-3 py-[6px] text-sm font-medium leading-5 tracking-body transition-colors duration-150',
+      'inline-flex min-h-6 items-center justify-center rounded-[8px] px-3 py-[6px] text-sm font-medium leading-5 tracking-[0.1px] transition-colors duration-150',
       variantClasses,
       props.as === 'button'
         ? 'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-value/25'
