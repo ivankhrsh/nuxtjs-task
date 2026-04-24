@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Montserrat:wght@500;700&family=Nunito+Sans:wght@400;500&family=Inter:wght@400;500&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Surface */
+    --color-surface:         249 250 251;
+    --color-surface-lowest:  255 255 255;
+    --color-surface-low:     245 242 250;
+    --color-surface-high:    233 231 239;
+
+    /* Text */
+    --color-on-surface:         27 27 33;
+    --color-on-surface-variant: 69 70 79;
+
+    /* Borders */
+    --color-outline:         118 118 128;
+    --color-outline-variant: 198 197 208;
+
+    /* Primary */
+    --color-primary:               28 64 190;
+    --color-primary-container:     221 225 255;
+    --color-on-primary-container:  55 67 121;
+
+    /* Secondary */
+    --color-secondary-container:    194 232 255;
+    --color-on-secondary-container: 0 77 103;
+
+    /* Table header */
+    --color-table-header: 245 245 247;
+
+    /* Status */
+    --color-status-completed-bg:  194 239 173;
+    --color-status-completed-ink: 43 79 30;
+    --color-status-rejected-bg:   255 218 214;
+    --color-status-rejected-ink:  147 0 10;
+  }
+
+  .dark {
+    /* Surface */
+    --color-surface:         19 19 24;
+    --color-surface-lowest:  29 27 32;
+    --color-surface-low:     38 36 42;
+    --color-surface-high:    43 41 48;
+
+    /* Text */
+    --color-on-surface:         226 226 233;
+    --color-on-surface-variant: 197 198 208;
+
+    /* Borders */
+    --color-outline:         143 144 154;
+    --color-outline-variant: 69 70 79;
+
+    /* Primary */
+    --color-primary:               186 195 255;
+    --color-primary-container:     36 53 121;
+    --color-on-primary-container:  221 225 255;
+
+    /* Secondary */
+    --color-secondary-container:    0 77 103;
+    --color-on-secondary-container: 194 232 255;
+
+    /* Table header */
+    --color-table-header: 38 36 42;
+
+    /* Status */
+    --color-status-completed-bg:  43 79 30;
+    --color-status-completed-ink: 194 239 173;
+    --color-status-rejected-bg:   147 0 10;
+    --color-status-rejected-ink:  255 218 214;
+  }
+
+  html,
+  body {
+    @apply bg-surface text-on-surface font-sans min-h-screen m-0;
+  }
+}
+
+@layer utilities {
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+}
