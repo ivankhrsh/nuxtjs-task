@@ -5,10 +5,10 @@
         v-for="tab in tabs"
         :key="tab.label"
         type="button"
-        :aria-current="isActive(tab) ? 'page' : undefined"
-        class="inline-flex items-center justify-center rounded-[20px] px-3 py-1.5 text-sm leading-5 tracking-[0.1px] whitespace-nowrap transition-colors duration-150 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-value/25 sm:px-4 sm:py-[10px]"
+        :aria-current="tab.label === activeTabLabel ? 'page' : undefined"
+        class="inline-flex items-center justify-center rounded-tab px-3 py-1.5 text-sm leading-5 tracking-body whitespace-nowrap transition-colors duration-150 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-value/25 sm:px-4 sm:py-[10px]"
         :class="
-          isActive(tab)
+          tab.label === activeTabLabel
             ? 'bg-primary-value/10 font-semibold text-primary-value'
             : 'font-medium text-on-surface-variant hover:bg-surface-low hover:text-primary-value'
         "
@@ -34,13 +34,7 @@ const props = withDefaults(defineProps<Props>(), {
 
 const route = useRoute();
 
-function isActive(tab: HeaderTab) {
-  const matchedTab = props.tabs.find((item) => item.to === route.path);
-
-  if (matchedTab) {
-    return matchedTab.label === tab.label;
-  }
-
-  return tab.label === props.activeLabel;
-}
+const activeTabLabel = computed(
+  () => props.tabs.find((t) => t.to === route.path)?.label ?? props.activeLabel,
+);
 </script>

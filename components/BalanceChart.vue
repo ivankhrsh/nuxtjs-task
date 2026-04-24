@@ -3,7 +3,7 @@
     class="rounded-card border border-outline-variant bg-surface-lowest px-4 py-6 shadow-row"
   >
     <div class="mb-4 flex items-center justify-between gap-3">
-      <p class="m-0 text-[16px] font-medium leading-6 text-on-surface">
+      <p class="m-0 text-base font-medium leading-6 text-on-surface">
         Cash Available to Trade
       </p>
 
@@ -50,6 +50,8 @@ ChartJS.register(
 );
 
 const { isDark } = useTheme();
+
+const tickFont = { family: "Inter", size: 12, weight: "normal" } as const;
 
 const chartAreaBorder = {
   id: "chartAreaBorder",
@@ -185,11 +187,7 @@ const chartOptions = computed<ChartOptions<"line">>(() => {
         ticks: {
           color: tickColor,
           padding: 12,
-          font: {
-            family: "Inter",
-            size: 12,
-            weight: "normal",
-          },
+          font: tickFont,
         },
       },
       y: {
@@ -199,11 +197,7 @@ const chartOptions = computed<ChartOptions<"line">>(() => {
           stepSize: 5000,
           color: tickColor,
           padding: 12,
-          font: {
-            family: "Inter",
-            size: 12,
-            weight: "normal",
-          },
+          font: tickFont,
           callback(value) {
             return value === 0 ? "0" : `${Number(value) / 1000}K`;
           },
