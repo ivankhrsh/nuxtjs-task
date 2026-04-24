@@ -42,7 +42,7 @@
           </section>
 
           <section class="mt-10 flex flex-col gap-6">
-            <h2 class="m-0 text-[22px] font-medium leading-7 text-on-surface">
+            <h2 class="m-0 text-title-sm font-medium text-on-surface">
               Account Balance
             </h2>
 
@@ -50,7 +50,7 @@
           </section>
 
           <section class="mt-20 flex flex-col gap-6">
-            <h2 class="m-0 text-[22px] font-medium leading-7 text-on-surface">
+            <h2 class="m-0 text-title-sm font-medium text-on-surface">
               Connected Accounts
             </h2>
 
@@ -64,7 +64,7 @@
           </section>
 
           <section class="mt-24 flex flex-col gap-6 pb-6 sm:pb-8">
-            <h2 class="m-0 text-[22px] font-medium leading-7 text-on-surface">
+            <h2 class="m-0 text-title-sm font-medium text-on-surface">
               Recent Transfers
             </h2>
 

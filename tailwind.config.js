@@ -11,29 +11,6 @@ export default {
     },
     extend: {
       colors: {
-        // Legacy dark-theme tokens kept for the Auth0 scaffolding pages
-        // that have not been migrated to Figma tokens yet.
-        bg: {
-          base: '#1a1e27',
-          card: '#262a33',
-          inset: '#2d313c',
-        },
-        accent: {
-          DEFAULT: '#63b3ed',
-          hover: '#4299e1',
-        },
-        danger: {
-          DEFAULT: '#fc8181',
-          hover: '#e53e3e',
-        },
-        success: '#68d391',
-        ink: {
-          50: '#f7fafc',
-          100: '#e2e8f0',
-          200: '#cbd5e0',
-          300: '#a0aec0',
-        },
-
         'on-surface':             'rgb(var(--color-on-surface) / <alpha-value>)',
         'on-surface-variant':     'rgb(var(--color-on-surface-variant) / <alpha-value>)',
         'outline':                'rgb(var(--color-outline) / <alpha-value>)',
@@ -49,7 +26,7 @@ export default {
           low:     'rgb(var(--color-surface-low) / <alpha-value>)',
           high:    'rgb(var(--color-surface-high) / <alpha-value>)',
         },
-        'header-bg':  '#1B243D',         // dark top bar — fixed, same in both modes
+        'header-bg':  '#1B243D',
         'logo-blue':  '#477BFF',
         'portal-primary-light-100': 'rgb(var(--color-table-header) / <alpha-value>)',
         status: {
@@ -57,6 +34,19 @@ export default {
           'completed-ink': 'rgb(var(--color-status-completed-ink) / <alpha-value>)',
           'rejected-bg':   'rgb(var(--color-status-rejected-bg) / <alpha-value>)',
           'rejected-ink':  'rgb(var(--color-status-rejected-ink) / <alpha-value>)',
+        },
+        action: {
+          primary: {
+            hover: '#17369E',
+            active: '#142F8E',
+            'dark-text': '#1B2D88',
+            'dark-hover': '#CAD0FF',
+            'dark-active': '#BAC3FF',
+          },
+          tonal: {
+            hover: '#C8CFFD',
+            'dark-hover': '#2E4290',
+          },
         },
       },
       borderRadius: {
@@ -70,6 +60,14 @@ export default {
         logo: ['Montserrat', 'sans-serif'],
         nums: ['"Nunito Sans"', 'system-ui', 'sans-serif'],
         chart: ['Inter', 'system-ui', 'sans-serif'],
+      },
+      fontSize: {
+        label: ['0.9375rem', { lineHeight: '1.25rem' }],
+        'title-sm': ['1.375rem', { lineHeight: '1.75rem' }],
+      },
+      letterSpacing: {
+        label: '0.1px',
+        body: '0.15px',
       },
       keyframes: {
         'fade-in': {
