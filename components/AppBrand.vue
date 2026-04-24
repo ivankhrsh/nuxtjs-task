@@ -7,8 +7,8 @@
       aria-hidden="true"
     />
     <div class="flex flex-col items-start justify-center whitespace-nowrap">
-      <span class="font-logo text-[16px] font-bold leading-[18px] text-logo-blue">SAGE</span>
-      <span class="font-logo text-[10px] font-medium leading-[12px] tracking-[0.5px] text-white">TRADER</span>
+      <span class="font-logo text-base font-bold leading-[18px] text-logo-blue">SAGE</span>
+      <span class="font-logo text-2xs font-medium tracking-logo text-white">TRADER</span>
     </div>
   </div>
 </template>

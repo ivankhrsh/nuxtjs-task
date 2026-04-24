@@ -1,7 +1,7 @@
 <template>
   <button
     type="button"
-    class="group flex w-full items-center gap-3 rounded-tile px-2 py-1.5 text-left font-sans text-sm font-medium leading-5 tracking-[0.1px] transition-colors duration-150 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-value/30 lg:flex-col lg:items-center lg:justify-center lg:gap-1 lg:px-1 lg:py-2 lg:text-center lg:text-[12px] lg:leading-4 lg:tracking-[0.15px]"
+    class="group flex w-full items-center gap-3 rounded-tile px-2 py-1.5 text-left font-sans text-sm font-medium leading-5 tracking-body transition-colors duration-150 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-value/30 lg:flex-col lg:items-center lg:justify-center lg:gap-1 lg:px-1 lg:py-2 lg:text-center lg:text-xs lg:leading-4 lg:tracking-body-md"
     :aria-current="active ? 'page' : undefined"
     @click="$emit('select', item)"
   >
