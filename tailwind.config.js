@@ -49,6 +49,10 @@ export default {
           low:     'rgb(var(--color-surface-low) / <alpha-value>)',
           high:    'rgb(var(--color-surface-high) / <alpha-value>)',
         },
+        'primary-hover':           'rgb(var(--color-primary-hover) / <alpha-value>)',
+        'primary-active':          'rgb(var(--color-primary-active) / <alpha-value>)',
+        'primary-on-dark-bg':      'rgb(var(--color-primary-on-dark-bg) / <alpha-value>)',
+        'primary-container-hover': 'rgb(var(--color-primary-container-hover) / <alpha-value>)',
         'header-bg':  '#1B243D',         // dark top bar — fixed, same in both modes
         'logo-blue':  '#477BFF',
         'portal-primary-light-100': 'rgb(var(--color-table-header) / <alpha-value>)',
@@ -64,6 +68,17 @@ export default {
         card: '24px',
         row:  '16px',
         tile: '12px',
+        tab:  '20px',
+      },
+      fontSize: {
+        '2xs':        ['10px', { lineHeight: '12px' }],
+        'body-md':    ['15px', { lineHeight: '20px' }],
+        'heading-sm': ['22px', { lineHeight: '28px' }],
+      },
+      letterSpacing: {
+        body:    '0.1px',
+        'body-md': '0.15px',
+        logo:    '0.5px',
       },
       fontFamily: {
         sans: ['"Plus Jakarta Sans"', 'system-ui', 'sans-serif'],
