@@ -99,7 +99,7 @@ npm run preview
 
 ### Key design decisions
 
-**Theming** — Light and dark mode use CSS custom properties (`--color-*`) defined on `:root` and `.dark`. Tailwind color tokens reference these variables, so every semantic color flips automatically when `useTheme` toggles the `.dark` class on `<html>`.
+**Theming** — Light and dark mode use CSS custom properties (`--color-*`) defined on `:root` and `.dark`. Tailwind color tokens reference these variables, so every semantic color flips automatically when `useTheme` toggles the `.dark` class on `<html>`. The chosen theme is persisted to `localStorage`. To prevent a flash of the wrong theme on reload, `app.vue` injects a small synchronous inline script into `<head>` that reads `localStorage` (falling back to `prefers-color-scheme`) and applies `.dark` before the first paint.
 
 **Data** — All chart, account, and transfer data is mocked locally in `data/`. The page is ready to swap in real API calls without touching the components.
 
