@@ -19,7 +19,7 @@
     :class="[
       'fixed bottom-0 left-0 top-12 z-50 flex w-[260px] shrink-0 flex-col bg-surface-low shadow-card-light-lg transition-transform duration-200 ease-out',
       'border-r border-outline-variant',
-      'lg:sticky lg:top-12 lg:z-20 lg:h-[calc(100vh-48px)] lg:w-[112px] lg:translate-x-0 lg:self-start lg:shadow-none lg:transition-none ',
+      'lg:sticky lg:top-12 lg:z-20 lg:h-[calc(100vh-48px)] lg:w-28 lg:translate-x-0 lg:self-start lg:shadow-none lg:transition-none ',
       open ? 'translate-x-0' : '-translate-x-full',
     ]"
     :id="id"

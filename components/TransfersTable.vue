@@ -15,7 +15,7 @@
       <div class="hidden overflow-x-auto sm:block">
         <div class="min-w-[820px]">
           <div
-            class="grid grid-cols-[152px_1fr_1fr_1fr_1fr_180px] items-center gap-8 px-4 py-[10px] text-sm font-medium tracking-[0.1px] text-on-surface-variant"
+            class="grid grid-cols-[152px_1fr_1fr_1fr_1fr_180px] items-center gap-8 px-4 py-2.5 text-sm font-medium tracking-[0.1px] text-on-surface-variant"
             :class="{ 'border-b border-outline-variant': !formattedRows.length }"
           >
             <span>Date</span>

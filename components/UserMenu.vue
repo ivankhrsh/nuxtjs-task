@@ -34,7 +34,7 @@
         v-if="open"
         role="menu"
         :aria-label="triggerLabel"
-        class="absolute right-0 top-full z-20 mt-2 min-w-[160px] overflow-hidden rounded-tile bg-surface-lowest py-1 border border-outline-variant shadow-card-light"
+        class="absolute right-0 top-full z-20 mt-2 min-w-40 overflow-hidden rounded-tile bg-surface-lowest py-1 border border-outline-variant shadow-card-light"
       >
         <a
           :href="logoutHref"

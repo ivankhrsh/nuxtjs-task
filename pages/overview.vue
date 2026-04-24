@@ -31,7 +31,7 @@
             <div
               class="flex flex-col gap-4 md:flex-row md:items-center md:gap-8"
             >
-              <h1 class="m-0 text-[24px] font-medium leading-8 text-on-surface">
+              <h1 class="m-0 text-2xl font-medium leading-8 text-on-surface">
                 Money Transfers
               </h1>
 
