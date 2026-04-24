@@ -68,7 +68,6 @@ export default {
         card: '24px',
         row:  '16px',
         tile: '12px',
-        tab:  '20px',
       },
       fontSize: {
         '2xs':        ['10px', { lineHeight: '12px' }],
